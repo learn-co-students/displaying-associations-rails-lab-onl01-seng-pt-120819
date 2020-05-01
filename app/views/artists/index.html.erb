@@ -4,7 +4,7 @@
     <li>
 
     <%= link_to artist.name, artist_path(artist) %>
-    (<%= artist.song.count %> <%= song.pluralize(artist.song_count) %>)
+    (<%= artist.songs.count %> <%= "songs".pluralize(artist.song_count) %>)
     </li>
 
   <% end %>
